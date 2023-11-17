@@ -1,5 +1,6 @@
 import React, { useContext, createContext } from 'react';
-
+import { Sepolia } from "@thirdweb-dev/chains";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import { useAddress, useContract, useMetamask, useContractWrite } from '@thirdweb-dev/react';
 import { ethers } from 'ethers';
 // import { EditionMetadataWithOwnerOutputSchema } from '@thirdweb-dev/sdk';
@@ -25,7 +26,6 @@ export const StateContextProvider = ({ children }) => {
 					form.image,
 				],
 			});
-
       console.log("contract call success", data)
     } catch (error) {
       console.log("contract call failure", error)
@@ -85,7 +85,7 @@ export const StateContextProvider = ({ children }) => {
       value={{ 
         address,
         contract,
-        // connect,
+        connect,
         createCampaign: publishCampaign,
         // getCampaigns,
         // getUserCampaigns,
