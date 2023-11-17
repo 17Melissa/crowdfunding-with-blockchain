@@ -13,7 +13,7 @@ const FormField = ({ labelName, placeholder, inputType, isTextArea, value, handl
           onChange={handleChange}
           rows={5}
           placeholder={placeholder}
-          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#f2f2f2] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#299a83] rounded-[10px] sm:min-w-[300px]"
+          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#f2f2f2] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#1f6054] rounded-[10px] sm:min-w-[300px]"
         />
       ) : (
         <input 
@@ -23,7 +23,7 @@ const FormField = ({ labelName, placeholder, inputType, isTextArea, value, handl
           type={inputType}
           step="0.1"
           placeholder={placeholder}
-          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#f2f2f2] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#299a83] rounded-[10px] sm:min-w-[300px]"
+          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#f2f2f2] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#1f6054] rounded-[10px] sm:min-w-[300px]"
         />
       )}
     </label>

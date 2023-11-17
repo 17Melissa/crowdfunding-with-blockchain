@@ -44,7 +44,7 @@ const CreateCampaign = () => {
     <div className="bg-[#48b38e] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
       {isLoading && "<Loader />"}
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] ">
-        <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
+        <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Create your New Campaign</h1>
       </div>
 
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
@@ -58,7 +58,7 @@ const CreateCampaign = () => {
           />
           <FormField 
             labelName="Campaign Title *"
-            placeholder="Write a title"
+            placeholder="e.g. Gift A New World"
             inputType="text"
             value={form.title}
             handleChange={(e) => handleFormFieldChange('title', e)}
@@ -68,7 +68,7 @@ const CreateCampaign = () => {
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
             labelName="Goal *"
-            placeholder="e.g. ETH 0.50"
+            placeholder="e.g. 0.5"
             inputType="text"
             value={form.goal}
             handleChange={(e) => handleFormFieldChange('goal', e)}
